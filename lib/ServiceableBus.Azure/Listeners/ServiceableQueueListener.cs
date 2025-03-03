@@ -16,7 +16,6 @@ internal class ServiceableQueueListener<T> : IServiceableQueueListener<T> where 
     private readonly IServiceProvider _serviceProvider;
     private ServiceBusProcessor? _processor = null;
     private readonly IServiceableQueueListenerOptions<T> _options;
-
     private readonly IServiceableRetryOptions _retryOptions;
 
     public ServiceableQueueListener(IServiceProvider serviceProvider, IServiceableQueueListenerOptions<T> options, IServiceableRetryOptions retryOptions)
